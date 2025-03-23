@@ -1,0 +1,210 @@
+.container {
+    height: 800px;
+    width: 95%;
+    margin: auto;
+}
+
+
+header {
+    background-image: url('../img/baner0.png');
+    background-size: contain;
+    height: 550px;
+
+}
+
+#buttonul {
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.ul2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+
+
+}
+
+
+.centerli {
+    background-color: rgba(19, 93, 255, 0.959);
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header>nav>div>img {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+#logo {
+    color: aliceblue;
+    font-size: 28px;
+    float: left;
+}
+
+nav>div>span {
+    font-size: 65px;
+}
+
+.buttonnav {
+    background-color: rgba(19, 93, 255, 0.959);
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    color: white;
+}
+
+.content {}
+
+#left {
+    float: left;
+    width: 60%;
+
+}
+
+#Venesa {
+    width: 100%;
+    background-color: skyblue;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.hoten {
+    border-radius: 10px;
+    height: 25px;
+
+}
+
+.phone {
+    border-radius: 10px;
+    height: 25px;
+
+}
+
+.lieutrinh {
+    border-radius: 10px;
+    height: 25px;
+
+}
+
+.email {
+    border-radius: 10px;
+    height: 25px;
+
+
+}
+
+.form2 {
+    margin-top: 20px;
+    justify-content: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonform2 {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+
+
+.pp1 {
+    width: 70%;
+    float: left;
+}
+
+#anchua {
+
+    color: tomato;
+    text-shadow: 2px 2px 4px rgb(25, 139, 59);
+
+
+}
+
+#right1 {
+    float: right;
+    width: 30%;
+    min-width: 150px;
+    min-height: 150px;
+    border: 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgsp {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+#right {
+    float: right;
+    width: 40%;
+    background-color: rgba(29, 161, 148, 0.801);
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px black;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.thongtin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(8, 90, 128);
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.imgvnsa {
+    width: 80%;
+    height: 200px;
+
+
+}
+
+
+
+footer {
+    background-color: rgba(16, 46, 110, 0.959);
+    height: 100px;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    clear: both;
+    margin-top: 50px;
+}

@@ -1,0 +1,632 @@
+&nbsp; chèn khoảng trắng
+<br>: ngắt dòng
+<p>: ngắt đoạn
+<hr>: xuống dòng
+<b>: văn bản in đậm, không có tầm quan trọng
+<strong>: văn bản có tầm quan trọng cao. Nội dung bên trong thường được in đậm.
+<i>: hiển thị bằng chữ nghiêng.
+<em>: văn bản được nhấn mạnh. Nội dung bên trong thường được hiển thị bằng chữ nghiêng.
+<mark>: phần tử xác định văn bản được đánh dấu hoặc highlighted
+<del>: xác định văn bản đã bị xóa. Trình duyệt hiển thị đường gạch qua văn bản.
+<sub>: Văn bản chỉ số xuất hiện bên dưới dòng bình thường và font chữ nhỏ hơn. 
+<sup>: Văn bản được hiển thị trên dòng bình thường, font chữ nhỏ hơn. 
+<blockquote>: xác định một phần được trích dẫn từ một nguồn khác.
+Example:
+<blockquote cite="http://www.worldwildlife.org/who/index.html"> </blockquote>
+<q>: một trích dẫn ngắn. Nội dung đặt trong dấu ngoặc kép.
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+Viết tắt
+<address>: xác định thông tin liên hệ tác giả / chủ sở hữu của tài liệu, có thể là email, URL, điện thoại, …
+
+
+Thuộc tính trong thẻ a:
+_blank: Mở tài liệu liên kết trong cửa sổ mới.
+_parent: Mở tài liệu liên kết trong cửa sổ cha.
+_self: Mở tài liệu liên kết trong cùng cửa sổ hoặc tab với tài liệu nguồn (mặc định)
+_top: Mở tài liệu liên kết trong cửa sổ trình duyệt đầy đủ.
+
+Example:
+<a href="/about-us.php" target="_top">
+   About Us
+</a> 
+nhấn chuyển đến vị trí cần chuyển
+<a href="#sectionA">Jump to Section A</a>
+<h2 id="sectionA“ >Section A</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+</p>
+
+<a href = "mailto: abc@example.com">Send Email</a>
+
+
+Thuộc tính của thẻ img
+
+Thuộc tính	Giá trị	Mô tả
+Align	Top, Bottom, middle, Left,  Right	Canh lề cho hình
+Border	Pixels	Độ dày đường viền xung quanh hình
+Height 	PIXELS %	Độ cao của hình
+Width	Pixels %	Độ rộng của hình
+Hspace	Pixels	Khoảng trống bên trái và phải của hình
+Vspace	Pixels	Khoảng trống trên và dưới hình
+
+
+<img src="angry.gif" alt="Angry" align="left" width="32" height="32" /> 
+
+Bản đồ ảnh: là một danh sách các tọa độ liên quan đến một hình ảnh cụ thể được tạo để siêu liên kết các khu vực của hình ảnh với các điểm đến khác nhau 
+Thẻ <map>: xác định một bản đồ ảnh với hệ thống tọa độ.
+
+Thẻ <area>: xác định một vùng trên bản đồ hệ thống tọa độ.
+
+ <img src="shapes.png" alt="Geometrical Shapes" usemap="#shapes">
+    <map name="shapes">
+        <area shape="circle" coords="40,40,40" href="circle.html" >
+        <area shape="poly" coords="148,2,104,80,193,80" href="triangle.html" >
+        <area shape="rect" coords="226,2,323,80" href="rectangle.html">
+        <area shape="poly" coords="392,2,352,32,366,80,418,80,432,32" href="pentagon.html" >
+    </map>
+
+ 
+
+
+ 
+
+
+
+
+	Thẻ <embed>: nhúng một tài liệu hoặc file video, nhạc vào trang web.
+	Thuộc tính của thẻ <embed>
+
+Thuộc tính	Mô tả
+align	Canh lề cho đối tượng: center, left hoặc right.
+autostart	Thiết lập chế độ tự động khởi động: true hoặc false.
+loop	Thiết lập chế độ lặp: true, hoặc false
+playcount	Xác định lượng thời gian để âm thanh được chơi. 
+hidden	Thiết lập đối tượng đa phương tiện được hiển thị hoặc không hiển thị trên trang: false hoặc true
+
+
+
+
+Thẻ <center></center>: nội dung canh giữa trang
+Ul li
+Ol li  đánh số
+<h4>A nested List:</h4>
+<ol type =I>
+    <li>Coffee</li>
+    <li>Tea
+    		<ol>
+         		<li>Black tea</li>
+         		<li>Green tea</li>
+     		</ol>
+	</li>
+    <li>Milk</li>
+</ol>
+
+Ký tự đặc biệt
+ 
+ 
+
+
+
+Thẻ <table>: tạo bảng trên trang web
+Mỗi bảng gồm các dòng và cột
+Thẻ <tr> tạo dòng 
+Thẻ <td> tạo ô chứa dữ liệu
+Thẻ <th> tạo tiêu đề cho bảng, dữ liệu trong ô tiêu đề mặc định là chữ đậm và canh giữa.
+
+
+ 
+
+Cell padding: khoảng cách giữa cạnh của ô và nội dung bên trong ô.
+Cell spacing: khoảng cách giữa các ô trong bảng
+ 
+
+	Canh lề cho bảng:
+	Mặc định, bảng đặt ở lề trái của trang.
+	Thuộc tính ALIGN  trong thẻ TABLE dùng canh lề cho bảng.
+
+Thuộc tính Align của thẻ <TD> dùng để canh lề cho văn bản theo chiều ngang
+Thuộc tính Valign của thẻ <TD> canh lề dữ liệu trong ô theo chiều đứng
+
+	Trộn dòng và cột: kết hợp nhiều ô thành 1 ô
+
+
+<TD ROWSPAN=value COLSPAN=value>
+Text
+</TD>
+ 
+
+Các thuộc tính của form type
+Button 
+Text boxes
+ Hidde/hidden
+Password
+Checkbox
+Radio button
+Submit
+Image submit
+Reset
+range
+
+
+ 
+Input radio 
+
+Type password
+
+checkbox
+
+
+<Select Name=”Name” Size=n Multiple>
+	<Option  Value=”Value” selected>Option 1
+	<Option  Value=”Value” > Option 2
+	…
+</Select>
+Dropdown
+Thuộc tính của phần tử select
+Name: tên của phần tử Select sẽ được xử lý bởi tập lệnh xử lý form.
+Size: số phần tử hiển thị trong danh sách.
+Multiple: có thể chọn nhiều lựa chọn.
+Selected: tùy chọn mặc định.
+Value: giá trị của phần tử trong danh sách.
+
+ 
+
+ 
+
+TextArea: là một Text box cho phép nhập nhiều dòng.
+
+Thuộc tính 
+Name: tên của textarea
+Cols: Số cột 
+Rows: Số hàng 
+
+Fieldset and legancy
+<Fieldset>
+<Legend>position</LEGEND>
+	Application for the post of: <INPUT name= 'name' type= 'text' tabindex= '1’>
+</Fieldset>
+ 
+
+Accesskey: Chỉ định một phím tắt để truy cập một phần tử.
+Cách tạo: Accesskey= character.
+Cách sử dụng: Alt+ character
+Tabindex: Chỉ định thứ tự tab của một phần tử.
+Tabindex= number
+
+	Phần tử <input type="email">: 
+
+Required
+/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
+	Iframe được sử dụng để hiển thị các đối tượng bên ngoài bao gồm các trang web khác trong một trang web. 
+<iframe src="URL"></iframe>
+
+
+<input type="button"> 
+<input type="checkbox"> 
+<input type="color"> 
+<input type="date"> 
+<input type="datetime-local"> 
+<input type="email"> 
+<input type="file"> 
+<input type="hidden"> 
+<input type="image"> 
+<input type="month"> 
+<input type="number"> 
+<input type="password"> 
+<input type="radio"> 
+<input type="range"> 
+<input type="reset"> 
+<input type="search"> 
+<input type="submit"> 
+<input type="tel"> 
+<input type="text"> 
+<input type="time"> 
+<input type="url"> 
+<input type="week">
+
+CSS
+<head>
+	<link rel="stylesheet" type="text/css“ href="style1.css">
+</head>
+
+
+Pseudo-classes:
+:hover, :visited, :active , :lang
+
+:first-line , :before, :after
+
+Decoration 
+
+p a {text-decoration: underline}
+áp dụng thẻ a bên trong thẻ p
+
+
+p * {color: black}
+áp dụng tất cả các con của phần tử p
+
+img + .link {float:right}
+
+áp dụng cho thẻ an hem
+
+p > .error {font-size: 8px}
+
+áp dụng cho thẻ error là con trực tiếp của thẻ p
+img[alt~=logo] {border: none}
+
+regex 
+áp dụng cho thẻ img có thuộc tính alt chứa từ logo
+
+.class1.class2: áp dụng cho 2 lớp (hoặc tất cả) tại cùng một thời điểm
+
+Style css
+
+
+Font-specific
+font-weight
+font-family
+font-size
+font-style
+font-size-adjust
+font-stretch
+Text-specific
+text-decoration
+text-transform
+text-shadow
+
+
+text-decoration: thiết lập sự xuất hiện của các dòng trang trí trên văn bản, là cách viết tắt của 
+text-decoration-line: gạch dưới hoặc gạch ngang
+text-decoration-color: màu sắc của trang trí.
+text-decoration-style: kiểu của đường được sử dụng cho trang trí: solid, wavy, dashed
+text-decoration-thickness: độ dày của đường được sử dụng để trang trí.
+
+ 
+
+vertical-align: Căn chỉnh theo chiều dọc hộp của inline, inline-block, table-cell box. 
+/* Keyword values */ 
+vertical-align: baseline; vertical-align: sub; 
+vertical-align: super; vertical-align: text-top; vertical-align: text-bottom; vertical-align: middle; vertical-align: top; 
+vertical-align: bottom; 
+/* <length> values */ 
+vertical-align: 10em; 
+vertical-align: 4px; 
+/*<percentage> values*/ 
+vertical-align: 20%; 
+/* Global values */ 
+vertical-align: inherit; 
+vertical-align: initial; 
+vertical-align: revert; 
+vertical-align: unset; 
+
+Baseline	Căn theo đường cơ sở của phần tử gốc
+Sub	Căn theo subscript-baseline của phần tử gốc.
+Super	Căn theo superscript-baseline của phần tử gốc
+text-top	Căn lề trên so với phần trên cùng của font của phần tử gốc.
+text-bottom	Căn lề dưới so với phần dưới cùng của font của phần tử gốc
+Middle	Căn giữa phần tử với đường cơ sở cộng với một nửa chiều cao x của phần tử gốc.
+
+
+  img.a { vertical-align: baseline;}
+  img.b { vertical-align: text-top;}
+  img.c { vertical-align: text-bottom;}
+
+ p { text-indent: 5em; background: powderblue; } 
+
+line-height: 1.2
+
+Background-color
+Background-image
+Background-attachment
+Background-repeat-x/y
+
+Background-position
+Background
+
+H2 {background-image:url(Bluedrop.gif);}
+
+body 
+{ 
+   background: lightblue url("img_tree.gif")
+               no-repeat fixed center; 
+}
+
+
+	Background-attachment: Chỉ định xem hình nền là cố định hay được cuộn với tài liệu. 
+
+/* Keyword values */ 
+background-attachment: scroll; 
+background-attachment: fixed; 
+background-attachment: local;
+ /* Global values */ 
+background-attachment: inherit; 
+background-attachment: initial; 
+background-attachment: revert;
+ background-attachment: unset; 
+
+
+
+
+/* Keyword values */ 
+float: left; 
+float: right; 
+float: none; 
+float: inline-start; 
+float: inline-end; 
+
+/* Global values */ 
+float: inherit; 
+float: initial; 
+float: revert; 
+float: unset; 
+
+Clear: Khi sử dụng thuộc tính float, để phần tử tiếp theo bên dưới không bị trồi lên bên phải hoặc bên trái ta sử dụng thuộc tính clear.
+
+/* Keyword values */ clear: none; 
+clear: left; 
+clear: right; 
+clear: both; 
+clear: inline-start; clear: inline-end; 
+
+….
+
+
+.div3 {
+  float: left;
+  padding: 10px;  
+  border: 3px solid #73AD21;
+}
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+
+ 
+
+
+Position CSS: thiết lập vị trí của các phần tử trên trang 
+
+display: inline-block;
+trên 1 hàng
+position: relative; tính luôn các phần tử khác
+position: absolute; không để ý phần tử khác
+position: fixed; 
+
+
+visibility
+Xác định một lớp có thể hiển thị hoặc bị ẩn
+visible | hidden 
+
+	z-index
+	Chỉ định phần tử nào sẽ xuất hiện bên trên / bên dưới các phần tử khác
+	<integer> |  auto
+	The higher the numbers, the higher the level
+Opacity: 0.2
+
+/* Keyword values */ 
+visibility: visible;  HIỆN	
+
+visibility: hidden;  ẨN
+visibility:collapse; 
+
+/* Global values */ 
+visibility: inherit; 
+visibility: initial; 
+visibility: revert; 
+visibility: unset; 
+
+/* legacy values */ display: block; 
+display: inline; 
+display: inline-block; display: flex; 
+display: inline-flex; display: grid; 
+display: inline-grid; display: flow-root; 
+
+/* two-value syntax */ display: block flow; 
+display: inline flow; 
+display: inline flow-root; display: block flex; 
+display: inline flex; 
+display: block grid; 
+display: inline grid; 
+display: block flow-root; 
+
+ 
+ 
+
+/* Keyword values */ overflow: visible; 
+overflow: hidden; 
+overflow: clip; 
+overflow: scroll; 
+overflow: auto;
+overflow: hidden visible; 
+	border-collapse: thiết lập các đường viền bảng thu gọn thành một đường viền duy nhất
+
+	CSS border-spacing: điều chỉnh khoảng cách giữa các đường viền của các ô
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+Bôi đen chẵn lẻ
+
+
+
+ul {
+     list-style: square inside url("sqpurple.gif");
+   }
+ 
+ 
+ 
+ 
+
+ 
+Shadow inset là đổ vào bên trong
+
+ 
+  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+đổ nhiều màu
+
+ div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+ }
+div#myDiv {
+  transform: rotate(20deg);
+}
+
+
+ div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+ }
+#myDiv {
+    transform: rotateZ(90deg);
+}
+
+Xoay
+
+#ourExample h1:hover span {
+    color: #484848;
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform:translateX(40px);
+    transform: translateX(40px);
+}
+
+ 
+Ví dụ 4: chuyển từ "dukes" sang bên phải khi người dùng rê chuột qua nó,
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+}
+
+row-reverse 
+
+  flex-wrap: nowrap;
+
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+
+  justify-content: space-around;
+cach deu
+
+  align-items: flex-start;
+  align-items: center;
+  align-items: flex-end;
+  align-items: stretch;
+  align-content: space-between;
+cách giữa theo chiều dọc
+  justify-content: center;
+canh giữa theo chiều dọc
+  align-items: center;
+canh giữa theo chiều ngang
+
+order: 1
+thuộc tính css sắp xếp
+
+Đáp ứng linh hoạtGiới thiệu lướiCột/Hàng lướiLưới ContainerMục lướiGiới thiệu RWDCửa sổ xem RWDChế độ xem lưới RWDTruy vấn phương tiện RWDHình ảnh RWDVideo RWDKhung RWDMẫu RWDHướng dẫn SASSMẫu CSSVí dụ về CSSTrình biên tập CSSĐoạn mã CSSTrắc nghiệm CSSBài tập CSSTrang web CSSGiáo trình CSSKế hoạch học tập CSSChuẩn bị phỏng vấn CSSTrại huấn luyện CSSChứng chỉ CSSTài liệu tham khảo CSSBộ chọn CSSBộ kết hợp CSSCác lớp giả CSSCác phần tử giả CSSQuy tắc CSSHàm CSSTài liệu tham khảo CSS AuralPhông chữ an toàn cho web CSSCSS có thể hoạt hìnhĐơn vị CSSBộ chuyển đổi CSS PX-EMMàu sắc CSSGiá trị màu CSSGiá trị mặc định của CSSHỗ trợ trình duyệt CSSCác mục CSS Flex
+❮ TrướcKế tiếp ❯
+________________________________________
+Các mục CSS Flex
+Các phần tử con trực tiếp của một vùng chứa flex sẽ tự động trở thành các mục flex.
+1
+2
+3
+4
+Phần tử phía trên biểu thị bốn mục flex màu xanh bên trong một vùng chứa flex màu xám.
+Ví dụ
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div>
+Hãy tự mình thử »
+Các thuộc tính CSS mà chúng tôi sử dụng cho các mục flex là:
+•	order
+•	flex-grow
+•	flex-shrink
+•	flex-basis
+•	flex
+•	align-self
+________________________________________
+Thuộc tính thứ tự
+Thuộc tính này orderchỉ định thứ tự của các mục flex bên trong vùng chứa flex.
+Mục flex đầu tiên trong mã không nhất thiết phải xuất hiện ở vị trí đầu tiên trong bố cục.
+Giá trị đơn hàng phải là số, giá trị mặc định là 0.
+1
+2
+3
+4
+Ví dụ
+Thuộc tính order có thể thay đổi thứ tự của các mục flex:
+<div class="flex-container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div>
+  <div style="order: 1">4</div>
+</div>
+Hãy tự mình thử »
+________________________________________
+Thuộc tính flex-grow
+Thuộc tính này flex-growchỉ rõ mức độ một mục flex sẽ tăng lên so với các mục flex còn lại.
+1
+2
+3
+Giá trị phải là số, giá trị mặc định là 0.
+Ví dụ
+Làm cho mục flex thứ ba phát triển nhanh hơn tám lần so với các mục flex khác:
+<div class="flex-container">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">2</div>
+  <div style="flex-grow: 8">3</div>
+</div>
+
+flex-shrink: 0
+không co lại
+
+flex-basis: 200px 	
+align-self: center
+bỏ quả hết chỉ căn chính giữa cả trên và dưới
+
+  align-content: center;
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea myArea myArea myArea';
+  gap: 10px;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+
+.item1 {
+  grid-area: myArea;
+}
+
+
+
+    'myArea myArea . . .';
+
+
+
+.title2>span>input:nth-child(1)
+
+    text-shadow: 2px 2px 4px rgb(25, 139, 59)
+4px là độ mờ của bóng
+img {
+    width: 200px; /* Đặt chiều rộng cố định */
+    height: auto;  /* Giữ tỷ lệ ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+
